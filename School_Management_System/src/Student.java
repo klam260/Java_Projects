@@ -3,11 +3,11 @@ package src;
 public class Student {
     private int id;
     private String name;
-    private float grade;
+    private double grade;
     private double feesPaid;
     private double feesTotal;
 
-    public Student(int id, String name, int grade){
+    public Student(int id, String name, double grade){
         this.id = id;
         this.name = name;
         this.grade = grade;
@@ -17,7 +17,7 @@ public class Student {
     }
 
     //standard setters and getters for object student 
-    public void setGrade(float grade){
+    public void setGrade(double grade){
         this.grade = grade;
     }
 
@@ -37,7 +37,7 @@ public class Student {
         return feesTotal;
     }
 
-    public float getGrade(){
+    public double getGrade(){
         return this.grade;
     }
 

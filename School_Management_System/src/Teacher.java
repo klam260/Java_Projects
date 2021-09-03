@@ -19,7 +19,7 @@ public class Teacher {
         return name;
     }
 
-    public int getId(){
+    public int getID(){
         return id;
     }
 
