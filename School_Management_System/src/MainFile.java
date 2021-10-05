@@ -34,7 +34,7 @@ public class MainFile {
         
         while(var){
             
-            System.out.println("Please enter a number based on the following options: \n 1) Enter a new student into system. \n 2) Enter a new teacher into system \n 3) Check money earned to date \n 9) To Quit ");
+            System.out.println("Please enter a number based on the following options: \n 1) Enter a new student into system. \n 2) Enter a new teacher into system \n 3) Check money earned to date \n 9) To Quit program ");
             int choice = scan.nextInt();
             scan.nextLine(); //clears out the buffer
 
@@ -67,8 +67,13 @@ public class MainFile {
                 System.out.println("Teacher successfully added!");
                 System.out.println("ID:"  + listOfTeachers.get(listOfTeachers.size()-1).getID() + " Name: " + listOfTeachers.get(listOfTeachers.size()-1).getName() + " Salary: "  + listOfTeachers.get(listOfTeachers.size()-1).getSalary());
 
-                
+            }
+            else if(choice == 3){
+                System.out.println("Total money earned to date from Forest is: " + forest.getTotalMoneyEarned());
+            }
 
+            else if(choice == 9){
+                System.exit(0);
             }
 
 
